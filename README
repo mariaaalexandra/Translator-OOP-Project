@@ -1,0 +1,53 @@
+TEMA2 POO
+
+---In fisierul ParssInfo am declarat vectorul de cuvinte words si ArrayList ce contine cuvintele
+noi adaugate. In READING_FILES retin calea pentru fisierele citite. In metoda getDictionaries ci-
+tesc informatiile din fisierele cu extensia .json. Astfel, parcurg fisierele si verific daca sunt 
+de tipul json. Odata cu citirea cuvintelor si adaugarea in dictionar le setez si limba in functie 
+de fisierul din care provin. La final afisez cuvintele ce se afla in dictionar in fisierul de out.
+
+---In fisierul Methods am implementat metodele cerute:
+->Metoda addWord intoarce o variabila de tip boolean:true daca cuvantul este adaugat sau false in 
+cazul in care acesta exista deja. Parcurg cuvintele existente si caut cuvantul ce trebuie adaugat.
+Daca nu il gasesc, atunci adaug cuvantul in dictionar.
+->Metoda removeWord intoarce o variabila de tip boolean: true daca cuvantul este sters din dictionar 
+sau false daca cuvantul nu exista. Parcurg cuvintele din dictionar si verific daca limba
+si numele coincid, caz in care sterg cuvantul.
+->Metoda addDefinitionForWord intoarce o variabila de tip boolean:true daca definitia e adaugata sau 
+false daca aceasta exista deja. Parcurg cuvintele din dictionar si verific daca am ajuns la cuvantul cautat. 
+Apoi parcurg definitiile cuvantului si verific daca exista deja sau nu definitia,
+caz in care o adaug.
+->Metoda removeDefinition intoarce o variabila de tip boolean:true daca definitia a fost stearsa
+sau false in cazul in care nu exista. Parcurg cuvintele din dictionar si verific daca am ajuns la
+cuvantul dat ca parametru. Apoi verific daca exista sau nu definitia in dictionar.
+->Metoda translateWord intoarce un string care reprezinta traducerea cuvantului dat ca parametru in limba 
+ceruta. In variabilele sg si pl retin daca cuvantul cautat este la una din cele doua forme. Mai intai 
+parcurg intreaga lista de cuvinte si verific existenta cuvantului si in listele de plural si singular 
+si retin forma cuvantului in variabile mentionate. Odata gasit cuvantul ii 
+retin forma in engleza. Daca cuvantul de tradus este deja in engleza atunci nu il mai caut, iar 
+daca limba de traducere este engleza returnez direct cuvantul cu forma in engleza. Altfel parcurg 
+din nou si caut cuvantul cu traducerea in engleza si aplic forma specifica.
+->Metoda translateSentence intoarce un string care reprezinta propozitia tradusa. Mai intai despart
+toate cuvintele din propozitie si le retin intr-un vector. Parcurg vectorul de cuvinte si adaug in 
+variabila transSentence cuvintele traduse cu metoda translateWord.
+->Metoda synonyms intoarce un ArrayList care contine sinonimele cuvantului. In synonyms retin sino-
+nimele cuvantului. Mai intai parcurg cuvintele si caut traducerea in engleza, urmand ca mai apoi sa
+parcurg din nou cuvintele pentru a gasi cuvantul in limba in care trebuie tradus si retin sinoni-
+mele acestuia.
+->Metoda translateSentences intoarce un ArrayList care reprezinta variantele de traducere a unei 
+propozitii. Mai intai impart propozitia in cuvinte si le parcurg. In variabila synonyms retin si-
+nonimele cuvantului si adaug pe primul in propozitia tradusa, apoi continui sa traduc si restul
+cuvintelor. Procesul se repeta de maxim 3 si in limita numarului de sinonime.
+->Metoda getDefinitionsForWord intoarce un ArrayList care reprezinta definitiile cuvantului cauta
+ordonate crescator dupa anul de aparitie a dictionarului. Mai intai parcurg cuvinte si caut cu-
+vantul dat ca parametru si il retin. Apoi parcurg definitiile acestuia si le interschimb daca anul
+unei definitii anterioare este mai mare ca al urmatoarei.
+->Metoda exportDictionary afiseaza cuvintele impreuna cu informariile acestora in format json. Mai
+intai sortez crescator in functie de anul aparitiei dictionarului toate definitiile, dupa care
+parcurg cuvintele si le sortez alfabetic.
+
+---In fisierul pom.xml am adaugat dependintele pentru folosirea gson si Maven
+
+---In Tests am implementat cate 3 testari pentru fiecare metoda
+
+---Main sunt apelate testarile pentru fiecare metoda

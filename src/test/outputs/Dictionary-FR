@@ -1,0 +1,116 @@
+[
+  {
+    "language": "FR",
+    "word": "chat",
+    "word_en": "cat",
+    "type": "noun",
+    "singular": [
+      "chat"
+    ],
+    "plural": [
+      "chats"
+    ],
+    "definitions": [
+      {
+        "dict": "Larousse",
+        "dictType": "synonyms",
+        "year": 2000,
+        "text": [
+          "greffier",
+          "mistigri",
+          "matou",
+          "minet"
+        ]
+      },
+      {
+        "dict": "Larousse",
+        "dictType": "definitions",
+        "year": 2000,
+        "text": [
+          "Mammifère carnivore (félidé), sauvage ou domestique, au museau court et arrondi",
+          "Familier. Terme d\u0027affection, de tendresse adressé à quelqu\u0027un",
+          "Jeu d\u0027enfants dans lequel un des joueurs, le chat, poursuit les autres et tente de les toucher"
+        ]
+      },
+      {
+        "dict": "Larousse",
+        "dictType": "definitions",
+        "year": 2000,
+        "text": [
+          "l\u0027être vivant qui miaule"
+        ]
+      }
+    ]
+  },
+  {
+    "language": "FR",
+    "word": "chien",
+    "word_en": "dog",
+    "type": "noun",
+    "singular": [
+      "chien"
+    ],
+    "plural": [
+      "chiens"
+    ],
+    "definitions": [
+      {
+        "dict": "Larousse",
+        "dictType": "synonyms",
+        "year": 2000,
+        "text": [
+          "cabot",
+          "clebard",
+          "clebs",
+          "toutou"
+        ]
+      },
+      {
+        "dict": "Larousse",
+        "dictType": "definitions",
+        "year": 2000,
+        "text": [
+          " Mammifère (canidé) carnivore aux multiples races\");"
+        ]
+      },
+      {
+        "dict": "Larousse",
+        "dictType": "definitions",
+        "year": 2000,
+        "text": [
+          "l\u0027être vivant qui aboie"
+        ]
+      }
+    ]
+  },
+  {
+    "language": "FR",
+    "word": "jeu",
+    "word_en": "game",
+    "type": "noun",
+    "singular": [
+      "jeu"
+    ],
+    "plural": [
+      "jeux"
+    ],
+    "definitions": []
+  },
+  {
+    "language": "FR",
+    "word": "manger",
+    "word_en": "eat",
+    "type": "verb",
+    "singular": [
+      "mange",
+      "manges",
+      "mange"
+    ],
+    "plural": [
+      "mangeons",
+      "mangez",
+      "mangent"
+    ],
+    "definitions": []
+  }
+]
